@@ -1,0 +1,68 @@
+<html lang="en"></html>
+<head>
+  <h1>
+    <img
+      src="../Baddass Burgers/facebook_cover_photo_1.png"
+      alt="Baddass"
+      width="800px"
+      height="150px"
+    />
+  </h1>
+  <style>
+    .burgermenu {
+      color: black;
+      border: 2px black;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      gap: 16px ;
+    justify-content:center;
+      align-items:center; min-height:50vh;
+    }
+    function calculate: () {
+        let basicSteakhouseAmount = document.getElementById(`basic-amount`).value;
+        let basicVeganhouseAmount = document.getElementById(`basic-amount`).value;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="burgermenu">
+    <h2>Steakhouse Burger</h2>
+    <img
+      src="../streakhouse burger/steakhouse burger pic.jpg"
+      alt="steakhouse"
+      width="100px"
+      height="100px"
+    />
+    <input id="steakhouse-amount" type="number" />
+  </div>
+
+  <div class="burgermenu">
+    <h2>Vegan</h2>
+    <img
+      src="../streakhouse burger/vegan burger.jpg"
+      alt="vegan"
+      width="100px"
+      height="100px"
+    />
+    <input type="vegan-amount" type="number" />
+  </div>
+
+  <div class="burgermenu">
+    <h2>Fried Chicken</h2>
+    <img
+      src="../streakhouse burger/fried chicken.jpg"
+      alt="chicken"
+      width="100px"
+      height="100px"
+    />
+    <input id="friedchicken-amount" type="number" />
+  </div>
+  <section>
+    <div id="total-price">Total Price: -</div>
+    <div id="total-amount">Total Amount: -</div>
+    <button onclick="calculate()">Order</button>
+  </section>
+</body>
